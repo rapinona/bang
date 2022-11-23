@@ -13,6 +13,11 @@
 		8374A9C9292DC66D00E987C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8374A9C7292DC66D00E987C6 /* Main.storyboard */; };
 		8374A9CB292DC67500E987C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8374A9CA292DC67500E987C6 /* Assets.xcassets */; };
 		8374A9CE292DC67500E987C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8374A9CC292DC67500E987C6 /* LaunchScreen.storyboard */; };
+		8374A9D7292DC86400E987C6 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8374A9D6292DC86400E987C6 /* CoreMotion.framework */; };
+		8374A9D9292DC87A00E987C6 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8374A9D8292DC87A00E987C6 /* Messages.framework */; };
+		8374A9DB292DC88000E987C6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8374A9DA292DC88000E987C6 /* MessageUI.framework */; };
+		8374A9DD292DD27A00E987C6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8374A9DC292DD27A00E987C6 /* AVFoundation.framework */; };
+		8374A9DF292DD43400E987C6 /* loud_bang.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8374A9DE292DD43400E987C6 /* loud_bang.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		8374A9CA292DC67500E987C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8374A9CD292DC67500E987C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8374A9CF292DC67500E987C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8374A9D6292DC86400E987C6 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		8374A9D8292DC87A00E987C6 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		8374A9DA292DC88000E987C6 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		8374A9DC292DD27A00E987C6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8374A9DE292DD43400E987C6 /* loud_bang.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loud_bang.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8374A9DD292DD27A00E987C6 /* AVFoundation.framework in Frameworks */,
+				8374A9D9292DC87A00E987C6 /* Messages.framework in Frameworks */,
+				8374A9D7292DC86400E987C6 /* CoreMotion.framework in Frameworks */,
+				8374A9DB292DC88000E987C6 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +56,7 @@
 			children = (
 				8374A9C0292DC66D00E987C6 /* bang */,
 				8374A9BF292DC66D00E987C6 /* Products */,
+				8374A9D5292DC86300E987C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,9 +77,21 @@
 				8374A9C7292DC66D00E987C6 /* Main.storyboard */,
 				8374A9CA292DC67500E987C6 /* Assets.xcassets */,
 				8374A9CC292DC67500E987C6 /* LaunchScreen.storyboard */,
+				8374A9DE292DD43400E987C6 /* loud_bang.mp3 */,
 				8374A9CF292DC67500E987C6 /* Info.plist */,
 			);
 			path = bang;
+			sourceTree = "<group>";
+		};
+		8374A9D5292DC86300E987C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8374A9DC292DD27A00E987C6 /* AVFoundation.framework */,
+				8374A9DA292DC88000E987C6 /* MessageUI.framework */,
+				8374A9D8292DC87A00E987C6 /* Messages.framework */,
+				8374A9D6292DC86400E987C6 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +154,7 @@
 			files = (
 				8374A9CE292DC67500E987C6 /* LaunchScreen.storyboard in Resources */,
 				8374A9CB292DC67500E987C6 /* Assets.xcassets in Resources */,
+				8374A9DF292DD43400E987C6 /* loud_bang.mp3 in Resources */,
 				8374A9C9292DC66D00E987C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
